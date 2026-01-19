@@ -432,9 +432,10 @@ read_text_input() {
 
         # Validate if validator provided
         if [[ -n "$validator" ]]; then
+            # Best practice: Check exit code directly in the if condition instead of using $?
+            # This is more readable and avoids potential issues with $? being overwritten
             local error
-            error=$("$validator" "$input" 2>&1)
-            if [[ $? -eq 0 ]]; then
+            if error=$("$validator" "$input" 2>&1); then
                 valid=true
             else
                 echo -e "${TUI_ERROR}${error}${TUI_NC}"

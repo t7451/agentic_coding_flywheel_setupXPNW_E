@@ -106,9 +106,10 @@ handle_project_name_input() {
         fi
 
         # Validate
+        # Best practice: Check exit code directly in the if condition instead of using $?
+        # This is more readable and avoids potential issues with $? being overwritten
         local error
-        error=$(validate_project_name "$name" 2>&1)
-        if [[ $? -eq 0 ]]; then
+        if error=$(validate_project_name "$name" 2>&1); then
             valid=true
             state_set "project_name" "$name"
             log_validation "project_name" "$name" "PASS"
