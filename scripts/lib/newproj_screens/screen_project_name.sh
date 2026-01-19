@@ -107,8 +107,11 @@ handle_project_name_input() {
 
         # Validate
         # SC2181 fix: Check exit code directly instead of using $?
-        # Before: error=$(validate_project_name "$name" 2>&1); if [[ $? -eq 0 ]]; then
-        # After: if error=$(validate_project_name "$name" 2>&1); then
+        # Before (2 lines):
+        #   error=$(validate_project_name "$name" 2>&1)
+        #   if [[ $? -eq 0 ]]; then
+        # After (1 line):
+        #   if error=$(validate_project_name "$name" 2>&1); then
         local error
         if error=$(validate_project_name "$name" 2>&1); then
             valid=true
