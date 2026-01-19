@@ -432,9 +432,11 @@ read_text_input() {
 
         # Validate if validator provided
         if [[ -n "$validator" ]]; then
+            # SC2181 fix: Check exit code directly instead of using $?
+            # Before: error=$("$validator" "$input" 2>&1); if [[ $? -eq 0 ]]; then
+            # After: if error=$("$validator" "$input" 2>&1); then
             local error
-            error=$("$validator" "$input" 2>&1)
-            if [[ $? -eq 0 ]]; then
+            if error=$("$validator" "$input" 2>&1); then
                 valid=true
             else
                 echo -e "${TUI_ERROR}${error}${TUI_NC}"
