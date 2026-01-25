@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+# shellcheck disable=SC2317
+# SC2317 (unreachable code) is disabled for this file because all test functions are invoked
+# indirectly via the run_test function, causing ShellCheck to incorrectly flag them as unreachable.
+# The pattern used here (indirect function invocation) is a standard testing pattern.
+
 # ============================================================
 # Unit Tests for newproj_logging.sh
 # Run with: bash scripts/lib/test_newproj_logging.sh
