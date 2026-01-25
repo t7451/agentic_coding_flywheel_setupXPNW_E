@@ -36,6 +36,7 @@ setup() {
 }
 
 # Cleanup test environment
+# shellcheck disable=SC2317
 cleanup() {
     if [[ -n "$TEST_TMP_DIR" && -d "$TEST_TMP_DIR" ]]; then
         rm -rf "$TEST_TMP_DIR"
@@ -61,7 +62,11 @@ run_test() {
 # ============================================================
 # Test Cases
 # ============================================================
+# Note: SC2317 (unreachable code) warnings are suppressed for all test functions below.
+# These functions are invoked indirectly through the run_test() function and ShellCheck
+# cannot detect this indirect invocation pattern.
 
+# shellcheck disable=SC2317
 test_init_logging() {
     init_logging
     [[ -f "$ACFS_SESSION_LOG" ]] || return 1
@@ -69,6 +74,7 @@ test_init_logging() {
     return 0
 }
 
+# shellcheck disable=SC2317
 test_log_levels() {
     init_logging
 
@@ -84,6 +90,7 @@ test_log_levels() {
     return 0
 }
 
+# shellcheck disable=SC2317
 test_log_state() {
     init_logging
 
@@ -95,6 +102,7 @@ test_log_state() {
     return 0
 }
 
+# shellcheck disable=SC2317
 test_log_screen() {
     init_logging
 
@@ -106,6 +114,7 @@ test_log_screen() {
     return 0
 }
 
+# shellcheck disable=SC2317
 test_log_input_sanitization() {
     init_logging
 
@@ -122,6 +131,7 @@ test_log_input_sanitization() {
     return 0
 }
 
+# shellcheck disable=SC2317
 test_log_validation() {
     init_logging
 
@@ -134,6 +144,7 @@ test_log_validation() {
     return 0
 }
 
+# shellcheck disable=SC2317
 test_log_file_op() {
     init_logging
 
@@ -145,6 +156,7 @@ test_log_file_op() {
     return 0
 }
 
+# shellcheck disable=SC2317
 test_log_cmd() {
     init_logging
 
@@ -156,6 +168,7 @@ test_log_cmd() {
     return 0
 }
 
+# shellcheck disable=SC2317
 test_log_tech_detect() {
     init_logging
 
@@ -166,6 +179,7 @@ test_log_tech_detect() {
     return 0
 }
 
+# shellcheck disable=SC2317
 test_log_nav() {
     init_logging
 
@@ -177,6 +191,7 @@ test_log_nav() {
     return 0
 }
 
+# shellcheck disable=SC2317
 test_log_json() {
     init_logging
 
@@ -187,6 +202,7 @@ test_log_json() {
     return 0
 }
 
+# shellcheck disable=SC2317
 test_finalize_logging() {
     init_logging
     finalize_logging 0
@@ -196,6 +212,7 @@ test_finalize_logging() {
     return 0
 }
 
+# shellcheck disable=SC2317
 test_log_checkpoint() {
     init_logging
 
@@ -208,6 +225,7 @@ test_log_checkpoint() {
     return 0
 }
 
+# shellcheck disable=SC2317
 test_verbose_mode() {
     export ACFS_LOG_LEVEL=$ACFS_LOG_INFO
     init_logging
@@ -227,6 +245,7 @@ test_verbose_mode() {
     return 0
 }
 
+# shellcheck disable=SC2317
 test_show_log_location() {
     init_logging
 
@@ -237,6 +256,7 @@ test_show_log_location() {
     return 0
 }
 
+# shellcheck disable=SC2317
 test_get_log_path() {
     init_logging
 
@@ -248,6 +268,7 @@ test_get_log_path() {
     return 0
 }
 
+# shellcheck disable=SC2317
 test_log_env_snapshot() {
     init_logging
 
@@ -259,6 +280,7 @@ test_log_env_snapshot() {
     return 0
 }
 
+# shellcheck disable=SC2317
 test_log_level_filtering() {
     export ACFS_LOG_LEVEL=$ACFS_LOG_WARN
     init_logging
@@ -279,6 +301,7 @@ test_log_level_filtering() {
     return 0
 }
 
+# shellcheck disable=SC2317
 test_multiple_sessions() {
     init_logging
     local first_log="$ACFS_SESSION_LOG"
@@ -294,6 +317,7 @@ test_multiple_sessions() {
     return 0
 }
 
+# shellcheck disable=SC2317
 test_log_dump_state() {
     init_logging
 

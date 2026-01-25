@@ -432,8 +432,12 @@ read_text_input() {
 
         # Validate if validator provided
         if [[ -n "$validator" ]]; then
-            # Best practice: Check exit code directly in the if condition instead of using $?
-            # This is more readable and avoids potential issues with $? being overwritten
+            # SC2181 fix: Check exit code directly instead of using $?
+            # Before (2 lines):
+            #   error=$("$validator" "$input" 2>&1)
+            #   if [[ $? -eq 0 ]]; then
+            # After (1 line):
+            #   if error=$("$validator" "$input" 2>&1); then
             local error
             if error=$("$validator" "$input" 2>&1); then
                 valid=true

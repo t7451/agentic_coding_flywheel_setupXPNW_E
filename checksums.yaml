@@ -1,4 +1,4 @@
-# checksums.yaml - Auto-generated 2026-01-17T18:36:48+00:00
+# checksums.yaml - Auto-generated 2026-01-23T20:33:41+00:00
 # Run: ./scripts/lib/security.sh --update-checksums
 
 installers:
@@ -16,11 +16,11 @@ installers:
 
   mcp_agent_mail:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/mcp_agent_mail/main/scripts/install.sh"
-    sha256: "9cc8832efa1305221911043a6cc7fe12683e07b56e4fca7a03d3f6081e81a69d"
+    sha256: "92fb23cc1ecdfaa30fb351d601125fd48e8c2f6fcea0df7a5ddf48e15e9631e2"
 
   dcg:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/destructive_command_guard/master/install.sh"
-    sha256: "e6f686709849ed8e8be854570b77774134295f4badccfc021667fbdf7a8dc3e6"
+    sha256: "8a1cd1c91f40b1561a73f904d4809ee93e9ea9415f5cccaf8f996f095916f8c1"
 
   claude:
     url: "https://claude.ai/install.sh"
@@ -40,7 +40,7 @@ installers:
 
   ntm:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/ntm/main/install.sh"
-    sha256: "5bb60ed99251e36a24cd337fd1457b7d379fc4383b1d6612265e4c6a929a6c7f"
+    sha256: "ed9d1e4c4f84543c231f093d9e14e05ae335444440244556ee259bb91be74b2f"
 
   cm:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/cass_memory_system/main/install.sh"
@@ -48,19 +48,19 @@ installers:
 
   caam:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/coding_agent_account_manager/main/install.sh"
-    sha256: "082b65742cc4277981ac1dc064fe4201bdd6414be620815171451b847a776dc8"
+    sha256: "831b8a3d9273601d6a71124c54450ac72e480fddc4e5e87f39192f187bd4624f"
 
   ubs:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/ultimate_bug_scanner/master/install.sh"
-    sha256: "20b1f6b6337ac4df6e45af4c0028ecd01313a040f6233f60c7da42d9b8f1aa87"
+    sha256: "c0a4647b9d4e07816c3d47955d875fe5137c3e3098f2cb59c45f6bd8277cf40f"
 
   slb:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/simultaneous_launch_button/main/scripts/install.sh"
-    sha256: "bc278b4b234e3f85c9dc4def16336f420d5823fabba48aec26c4f72685dba191"
+    sha256: "194a851184ba659ba6fa946aeab180f5daaff619ef040e61aca8c302ca30e189"
 
   ru:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/repo_updater/main/install.sh"
-    sha256: "9a9f4cb42a1e801c36acc761ea513fef92c237fab6f56bbe5dae5cf7c27da51e"
+    sha256: "4af6f6fc31979c775553fdb50da73f34395762eca8c769dea9ab6de77535dc94"
 
   nvm:
     url: "https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh"
@@ -72,7 +72,7 @@ installers:
 
   bv:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/beads_viewer/main/install.sh"
-    sha256: "5cc023bfb705b0b4a2d1a335d80da5f59285040182d4d26cca01282752dbde7b"
+    sha256: "46b6c8a3c90e59b249a8475aa0fea9dbec97527eba0f57aa779d509cc9140270"
 
   csctf:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/chat_shared_conversation_to_file/main/install.sh"
