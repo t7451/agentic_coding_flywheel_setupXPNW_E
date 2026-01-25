@@ -1,4 +1,4 @@
-# checksums.yaml - Auto-generated 2026-01-23T20:33:41+00:00
+# checksums.yaml - Auto-generated 2026-01-25T22:27:25+00:00
 # Run: ./scripts/lib/security.sh --update-checksums
 
 installers:
@@ -12,7 +12,7 @@ installers:
 
   cass:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/coding_agent_session_search/main/install.sh"
-    sha256: "a3c40b382e67ea4dddb3fe8dfd692665bda4d08378f4c9d6ba5e94107136ed08"
+    sha256: "744f39ccd11c1a9be372d5b559d21cb77e6bcfe25905e227caa6ba7c801a5933"
 
   mcp_agent_mail:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/mcp_agent_mail/main/scripts/install.sh"
@@ -40,7 +40,7 @@ installers:
 
   ntm:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/ntm/main/install.sh"
-    sha256: "ed9d1e4c4f84543c231f093d9e14e05ae335444440244556ee259bb91be74b2f"
+    sha256: "5c3bde1d76bda7aa267944dea44907c3fecc2eeede36b56d9d7db5a3d571183e"
 
   cm:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/cass_memory_system/main/install.sh"
