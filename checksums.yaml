@@ -1,4 +1,4 @@
-# checksums.yaml - Auto-generated 2026-02-01T22:32:56+00:00
+# checksums.yaml - Auto-generated 2026-02-03T20:47:03+00:00
 # Run: ./scripts/lib/security.sh --update-checksums
 
 installers:
@@ -36,7 +36,7 @@ installers:
 
   uv:
     url: "https://astral.sh/uv/install.sh"
-    sha256: "2206437df06d0fff515d0e95193cfc2f4c2719d4c82f569d70057bbf5c4caba7"
+    sha256: "9e1128954fd0cb60e1a4ce6f52528a2cdd525f724edff5b8c3e06a71b385aa25"
 
   ntm:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/ntm/main/install.sh"
