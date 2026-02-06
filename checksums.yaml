@@ -1,4 +1,4 @@
-# checksums.yaml - Auto-generated 2026-02-05T22:35:43+00:00
+# checksums.yaml - Auto-generated 2026-02-06T02:41:49+00:00
 # Run: ./scripts/lib/security.sh --update-checksums
 
 installers:
@@ -16,7 +16,7 @@ installers:
 
   mcp_agent_mail:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/mcp_agent_mail/main/scripts/install.sh"
-    sha256: "92fb23cc1ecdfaa30fb351d601125fd48e8c2f6fcea0df7a5ddf48e15e9631e2"
+    sha256: "b3b6c52ba7b63516ab4dcdbe386d8f8fc8c429c8ee6037718c3dc194b3bf74f4"
 
   dcg:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/destructive_command_guard/master/install.sh"
