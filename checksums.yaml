@@ -1,10 +1,10 @@
-# checksums.yaml - Auto-generated 2026-02-06T02:41:49+00:00
+# checksums.yaml - Auto-generated 2026-02-07T06:53:32+00:00
 # Run: ./scripts/lib/security.sh --update-checksums
 
 installers:
   zoxide:
     url: "https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh"
-    sha256: "c5d94701cfdd87d19f3989c1239e921d4ff95d4c0742b16beca061618c937bf0"
+    sha256: "0c25aed6cce9d56ee0596c9a5df8cbe99ffd0f7a7054de0262234dd268b61404"
 
   giil:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/giil/main/install.sh"
