@@ -1,4 +1,4 @@
-# checksums.yaml - Auto-generated 2026-03-05T22:12:42+00:00
+# checksums.yaml - Auto-generated 2026-03-06T16:17:10+00:00
 # Run: ./scripts/lib/security.sh --update-checksums
 
 installers:
@@ -20,7 +20,7 @@ installers:
 
   dcg:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/destructive_command_guard/master/install.sh"
-    sha256: "9b8326a505fbca0c07569420acb01aa16f55ceca1e928d81704e55fe2ef75146"
+    sha256: "2d0683fc5417a391024aed70e351724c2401e2c651507f52bd41db1dbde2728e"
 
   claude:
     url: "https://claude.ai/install.sh"
@@ -52,7 +52,7 @@ installers:
 
   ubs:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/ultimate_bug_scanner/master/install.sh"
-    sha256: "0210181a9eb438625e3d069ec588aeb2d624cc994c974a37752497a3bcd6cab5"
+    sha256: "0e01428ca65ea252cc3aa5a9bed52f08d74317e13f2045de9ce8a7dbe52032de"
 
   slb:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/simultaneous_launch_button/main/scripts/install.sh"
