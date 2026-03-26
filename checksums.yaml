@@ -1,4 +1,4 @@
-# checksums.yaml - Auto-generated 2026-03-26T19:17:45+00:00
+# checksums.yaml - Auto-generated 2026-03-26T22:38:16+00:00
 # Run: ./scripts/lib/security.sh --update-checksums
 
 installers:
@@ -28,7 +28,7 @@ installers:
 
   atuin:
     url: "https://setup.atuin.sh"
-    sha256: "6835c5797fdc992b1d324fa4ae6a9bd7714b358fea7cc88c1c353e5bf2f8c912"
+    sha256: "a4a362c67ec75d294870d1034e475e8f6741e77ba71333a8443358cbe74f8667"
 
   bun:
     url: "https://bun.sh/install"
@@ -36,7 +36,7 @@ installers:
 
   uv:
     url: "https://astral.sh/uv/install.sh"
-    sha256: "4b1e46f98ef86e8712f1a926162e44594d9601fc65fdb074cd531e1ac41df65c"
+    sha256: "a6ccba649ac029ce18500400019d60de389838d13a6751aa2908ede1b2aa3a87"
 
   ntm:
     url: "https://raw.githubusercontent.com/Dicklesworthstone/ntm/main/install.sh"
